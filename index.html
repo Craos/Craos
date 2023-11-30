@@ -2,56 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Craos.NET</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="scss/custom.css" rel="stylesheet">
 </head>
-<body>
+<body class="p-1 p-lg-2">
 
-    <div class="container-lg rounded shadow cardheader">
-        <nav class="navbar rounded-5 shadow-lg" style="background-color: #21202f;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logobrancotransp.png" alt="Logo" height="32" class="d-inline-block align-text-top">
-                </a>
-            </div>
-        </nav>
+<div class="rounded-4 shadow cardheader">
+    <nav class="navbar rounded-5 shadow-lg" style="background-color: #21202f;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img alt="Logo" class="d-inline-block align-text-top" height="32" src="images/logobrancotransp.png">
+            </a>
+        </div>
+    </nav>
+    <div class="row align-items-center g-10">
+        <div class="col-lg-8"><h1 class="ls-tight fw-bolder display-3 text-white mb-5">Build Professional Dashboards,
+            Faster than Ever.</h1>
+            <p class="w-xl-75 lead text-white">With our intuitive tools and expertly designed components, you'll have
+                the power to create professional dashboards quicker than ever.</p></div>
+        <div class="col-lg-4 align-self-end">
+            <div class="hstack gap-3 justify-content-lg-end"><a
+                    class="btn btn-lg btn-white rounded-pill bg-dark-hover border-0 shadow-none px-lg-8"
+                    href="https://themes.getbootstrap.com/product/satoshi-defi-and-crypto-exchange-theme/"
+                    target="_blank">Purchase now </a><a class="btn btn-lg btn-dark rounded-pill border-0 shadow-none px-lg-8"
+                                                        href="/pages/dashboard.html">Explore
+                more</a></div>
+        </div>
     </div>
+</div>
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-5 p-2 rounded shadow">
-                <canvas id="barra1"></canvas>
-            </div>
-
-            <div class="col p-5">
-                <h5 class="text-success mt-2 mb-3" style="text-transform: uppercase;"><b>Insights Visuais</b></h5>
-                <h3>Transforme dados em insights visuais extraordinários</h3>
-                <p>Com ferramentas modernas e uma expertise afiada, você pode esculpir gráficos e relatórios que vão além da simples representação.</p>
-                <ul>
-                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Desperte a capacidade de apresentar uma visão profunda dos seus dados</li>
-                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Explore a potência visual para destacar padrões e tendências de maneira intuitiva</li>
-                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Aproveite a clareza visual para comunicar informações complexas de forma acessível</li>
-                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Liberte o poder dos gráficos para tomar decisões informadas e estratégicas</li>
-                </ul>
-            </div>
-
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-5 p-2 rounded shadow">
+            <canvas id="barra1"></canvas>
         </div>
 
-        <div class="row mt-5">
-            <div class="col p-2 shadow">
-                <canvas id="barra2"></canvas>
-            </div>
-            <div class="col p-2 shadow">
-                <canvas id="barra3"></canvas>
-            </div>
+        <div class="col p-5">
+            <h5 class="text-success mt-2 mb-3" style="text-transform: uppercase;"><b>Insights Visuais</b></h5>
+            <h3>Transforme dados em insights visuais extraordinários</h3>
+            <p>Com ferramentas modernas e uma expertise afiada, você pode esculpir gráficos e relatórios que vão além da
+                simples representação.</p>
+            <ul>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Desperte a capacidade de
+                    apresentar uma visão profunda dos seus dados
+                </li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Explore a potência visual para
+                    destacar padrões e tendências de maneira intuitiva
+                </li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Aproveite a clareza visual para
+                    comunicar informações complexas de forma acessível
+                </li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> Liberte o poder dos gráficos para
+                    tomar decisões informadas e estratégicas
+                </li>
+            </ul>
         </div>
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <div class="row mt-5">
+        <div class="col p-2 shadow">
+            <canvas id="barra2"></canvas>
+        </div>
+        <div class="col p-2 shadow">
+            <canvas id="barra3"></canvas>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script type="module">
 
     const barra1 = document.getElementById('barra1');
@@ -174,7 +198,7 @@
         datasets: [
             {
                 label: 'Fully Rounded',
-                data: [-1,-2,-3,-3,-8,-7,4,1,-3,-9,-7,5],
+                data: [-1, -2, -3, -3, -8, -7, 4, 1, -3, -9, -7, 5],
                 borderColor: 'rgba(255,0,0,0.5)',
                 backgroundColor: 'rgba(255,0,0,0.05)',
                 borderWidth: 2,
@@ -183,7 +207,7 @@
             },
             {
                 label: 'Small Radius',
-                data: [4,-6,7,8,9,2,3,4,5,-9,5],
+                data: [4, -6, 7, 8, 9, 2, 3, 4, 5, -9, 5],
                 borderColor: 'rgba(0,128,255,0.1)',
                 backgroundColor: 'rgba(0,128,255,0.5)',
                 borderWidth: 2,
@@ -213,11 +237,16 @@
     new Chart(barra3, config3);
 
 
-
 </script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
