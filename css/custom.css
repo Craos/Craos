@@ -12551,11 +12551,6 @@ progress {
   content: "— ";
 }
 
-.cardheader {
-  background: linear-gradient(to right, #ffcc00, rgba(57, 3, 107, 0.5));
-  color: white; /* Ajuste a cor do texto para melhor contraste */
-}
-
 li {
   list-style-type: none;
 }
