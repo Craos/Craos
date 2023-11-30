@@ -17,5 +17,5 @@ do
     echo "Commit e push realizados com sucesso em $current_date às $current_time."
 
     # Espera 10 minutos
-    sleep 600
+    sleep 300
 done

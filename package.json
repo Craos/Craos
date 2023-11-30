@@ -1,6 +1,9 @@
 {
   "name": "craos",
   "version": "1.0.0",
+  "scripts": {
+    "scss": "sass --watch ./scss/custom.scss ./css/custom.css"
+  },
   "dependencies": {
     "bootstrap": "^5.3.2"
   }
