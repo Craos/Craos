@@ -121,7 +121,7 @@ export function color(index) {
 
 export function transparentize(value, opacity) {
     var alpha = opacity === undefined ? 0.5 : 1 - opacity;
-    return colorLib(value).alpha(alpha).rgbString();
+    return alpha;
 }
 
 export const CHART_COLORS = {
