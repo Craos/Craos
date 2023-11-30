@@ -12551,4 +12551,8 @@ progress {
   content: "— ";
 }
 
+li {
+  list-style-type: none;
+}
+
 /*# sourceMappingURL=custom.css.map */
