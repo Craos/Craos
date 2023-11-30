@@ -140,36 +140,25 @@
     };
 
     new Chart(barra2, config);
-
-
-    export function newDate(days) {
-        return DateTime.now().plus({days}).toJSDate();
-    }
-
-    export function transparentize(value, opacity) {
-        var alpha = opacity === undefined ? 0.5 : 1 - opacity;
-        return colorLib(value).alpha(alpha).rgbString();
-    }
-
-
+    
     const data3 = {
         labels: labels,
         datasets: [{
             type: 'bar',
             label: 'Dataset 1',
-            backgroundColor: transparentize(CHART_COLORS.red, 0.5),
+            backgroundColor: 'rgba(255, 99, 132, 0.5)',
             borderColor: CHART_COLORS.red,
             data: [2,3,5,8,1,3,5,8,9]
         }, {
             type: 'bar',
             label: 'Dataset 2',
-            backgroundColor: transparentize(CHART_COLORS.blue, 0.5),
+            backgroundColor: 'rgb(54, 162, 235, 0.5)',
             borderColor: CHART_COLORS.blue,
             data: [8,4,3,5,7,9,1,2,4]
         }, {
             type: 'line',
             label: 'Dataset 3',
-            backgroundColor: transparentize(CHART_COLORS.green, 0.5),
+            backgroundColor: 'rgb(75, 192, 192, 0.5)',
             borderColor: CHART_COLORS.green,
             fill: false,
             data: [3,2,4,6,8,0,1,2,3]
