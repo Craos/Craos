@@ -142,11 +142,33 @@
     new Chart(barra2, config);
 
 
-    
+    const data3 = {
+        labels: labels,
+        datasets: [
+            {
+                label: 'Fully Rounded',
+                data: [-1,-2,-3,-3,-8,-7,4,1,-3,-9,-8],
+                borderColor: '#ab1010',
+                backgroundColor: '#a85959',
+                borderWidth: 2,
+                borderRadius: Number.MAX_VALUE,
+                borderSkipped: false,
+            },
+            {
+                label: 'Small Radius',
+                data: [4,-6,7,8,9,2,3,4],
+                borderColor: '#350cfc',
+                backgroundColor: '#889cd0',
+                borderWidth: 2,
+                borderRadius: 5,
+                borderSkipped: false,
+            }
+        ]
+    };
 
     const config3 = {
         type: 'bar',
-        data: data,
+        data: data3,
         options: {
             responsive: true,
             plugins: {
