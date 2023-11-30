@@ -18,7 +18,7 @@
                 <canvas id="barra2"></canvas>
             </div>
             <div class="col">
-                <canvas id="barra2"></canvas>
+                <canvas id="barra3"></canvas>
             </div>
         </div>
 
@@ -29,6 +29,7 @@
 
     const barra1 = document.getElementById('barra1');
     const barra2 = document.getElementById('barra2');
+    const barra3 = document.getElementById('barra3');
 
     new Chart(barra1, {
         type: 'bar',
@@ -139,6 +140,36 @@
     };
 
     new Chart(barra2, config);
+
+
+
+    const config3 = {
+        type: 'line',
+        data: data,
+        options: {
+            plugins: {
+                title: {
+                    text: 'Chart.js Combo Time Scale',
+                    display: true
+                }
+            },
+            scales: {
+                x: {
+                    type: 'time',
+                    display: true,
+                    offset: true,
+                    ticks: {
+                        source: 'data'
+                    },
+                    time: {
+                        unit: 'day'
+                    },
+                },
+            },
+        },
+    };
+
+    new Chart(barra3, config3);
 
 
 
